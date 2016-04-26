@@ -1,6 +1,7 @@
 package com.begentgroup.sampledesignsupport;
 
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -14,8 +15,10 @@ public class AppBarActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_app_bar);
+        setContentView(R.layout.activity_collapsing);
         setSupportActionBar((Toolbar)findViewById(R.id.toolbar));
+        CollapsingToolbarLayout collapsing = (CollapsingToolbarLayout)findViewById(R.id.collapsing);
+        collapsing.setTitle("SampleDesignSupport");
         rvListView = (RecyclerView)findViewById(R.id.rv_list);
         mAdapter = new MyAdapter();
         rvListView.setAdapter(mAdapter);
