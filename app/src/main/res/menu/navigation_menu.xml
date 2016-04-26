@@ -9,4 +9,7 @@
     <item android:id="@+id/menu_3"
         android:title="M3"
         android:icon="@android:drawable/ic_input_get"/>
+    <item android:id="@+id/menu_4"
+        android:title="M4"
+        android:icon="@android:drawable/ic_dialog_email"/>
 </menu>

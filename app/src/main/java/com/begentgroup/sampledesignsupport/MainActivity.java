@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //                startActivity(new Intent(this, TextInputActivity.class));
                 startActivity(new Intent(this, CoordinatorActivity.class));
                 return true;
+            case R.id.menu_4 :
+                startActivity(new Intent(this, AppBarActivity.class));
+                return true;
         }
         return false;
     }
