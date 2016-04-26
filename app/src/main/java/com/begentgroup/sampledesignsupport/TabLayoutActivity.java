@@ -12,9 +12,6 @@ public class TabLayoutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tab_layout);
         tabs = (TabLayout)findViewById(R.id.tablayout);
-        for (int i = 0; i < 10; i++) {
-            tabs.addTab(tabs.newTab().setTag("tab"+i).setText("TAB"+i));
-        }
 
         tabs.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -34,5 +31,10 @@ public class TabLayoutActivity extends AppCompatActivity {
 
             }
         });
+
+        for (int i = 0; i < 10; i++) {
+            tabs.addTab(tabs.newTab().setTag("tab"+i).setText("TAB"+i));
+        }
+
     }
 }

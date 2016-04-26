@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -33,7 +32,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 startActivity(new Intent(this, TabPagerActivity.class));
                 return true;
             case R.id.menu_3 :
-                Toast.makeText(this, "menu item selected : "+ item.getTitle(), Toast.LENGTH_SHORT).show();
+//                startActivity(new Intent(this, TextInputActivity.class));
+                startActivity(new Intent(this, CoordinatorActivity.class));
                 return true;
         }
         return false;
